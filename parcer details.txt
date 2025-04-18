@@ -1,0 +1,32 @@
+
+Certainly! Let's break down the code step by step:
+
+Importing Libraries:
+
+python
+Copy code
+import spacy
+import re
+Here, we import the necessary libraries:
+
+spacy: This library is used for natural language processing tasks, such as named entity recognition (NER).
+re: This library provides support for working with regular expressions in Python.
+Loading SpaCy Model:
+
+python
+Copy code
+nlp = spacy.load("en_core_web_sm")
+This line loads the English language model for SpaCy, which is necessary for performing NER tasks.
+
+extract_information_from_resume() Function:
+This function takes a resume text as input and extracts various pieces of information such as name, qualifications, phone numbers, address, and skills using SpaCy's named entity recognition (NER) capabilities and regular expressions.
+
+parse_multiple_resumes() Function:
+This function takes a list of resume texts as input and iterates through each resume text, parsing the information using the extract_information_from_resume() function.
+
+Main Section:
+
+Sample resume texts are provided in a list named resumes.
+The parse_multiple_resumes() function is called with the list of resume texts as input, which returns a list of dictionaries containing parsed information for each resume.
+The parsed information from each resume is printed out for verification.
+Overall, the code demonstrates a basic approach to parsing information from resumes using SpaCy for named entity recognition and regular expressions for pattern matching (e.g., phone numbers). This code can be extended and refined further based on specific parsing requirements and the structure/format of the resumes being processed.
